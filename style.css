@@ -1,23 +1,163 @@
-body {
-    padding:0;
-    margin:0;
-}
 
-#holder {
-    width:100%;
-    height:100%;
+.background {
+    background-image: url(img/SScentre.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     background-color: black;
 }
 
-.imgcontainer {
-    background-image: url(img/SScentre.svg);
+.navbar-brand {
+    color: white;
+    font-family: "Poiret One";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    color: transparent;
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:focus {
+    color: #8f8f8f;
+}
+/* link */
+.navbar-transparent .navbar-nav > li > a {
+    color: #8f8f8f;
+}
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-transparent .navbar-nav > .active > a, 
+.navbar-transparent .navbar-nav > .active > a:hover, 
+.navbar-transparent .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-transparent .navbar-nav > .open > a, 
+.navbar-transparent .navbar-nav > .open > a:hover, 
+.navbar-transparent .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-transparent .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-transparent .navbar-nav > .dropdown > a:hover .caret,
+.navbar-transparent .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-transparent .navbar-nav > .open > a .caret, 
+.navbar-transparent .navbar-nav > .open > a:hover .caret, 
+.navbar-transparent .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-transparent .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-transparent .navbar-toggle:hover,
+.navbar-transparent .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-transparent .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-transparent .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+
+.icon-bar {
+    background: white;
+}
+
+.navbar-transparent .navbar > li > a:hover, .navbar-transparent .navbar > li > a:focus {
+    background-color: black;
+    color: blue;
+}
+
+.goplay {
+    color: #33cc66;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-style: italic;    
+}
+
+@font-face {
+    font-family: "Poiret One";
+    src: url('font/PoiretOne-Regular.ttf'), url('PoiretOne.eot');
+    /* IE */
+}
+
+.canvas {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: contain;  
     background-position: center;
-    position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+}
+
+
+.circle-draggable {
+    background-image: url(img/whitecircle.png);
+    width: 10%;
+    height: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.5em;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+.circle-droppable {
+    background-color: black;
+    border: 1px dotted white;
+}
+
+#drop1 {
+position: relative; 
+border-radius: 50%;
+width: 100%; 
+height: auto;
+}
+
+#drop2 {
+  border-radius: 50%; 
+	width: 20%;
+	height: 20%;
+}
+
+#drop3 {
+   border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.circle-dropped {
+    background-color: white;
+}
+
+.infoSS {
+padding-top: 20%;
+    color: white;
+    text-align: center;
+    font-family: "Poiret One"
 }

@@ -1,0 +1,57 @@
+.background {
+    background-image: url(img/SScentre.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: "Poiret One";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+@font-face {
+    font-family: "Poiret One";
+    src: url('font/PoiretOne-Regular.ttf'), url('PoiretOne.eot');
+    /* IE */
+}
+
+.canvas {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.circle-draggable {
+    background-image: url(img/whitecircle.png);
+    width: 10%;
+    height: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+      padding: 0.5em;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+
+
+.circle-droppable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    float: left;
+    margin: 300px;
+background-color: transparent;
+}
+
+.circle-dropped {
+    
+    background-color:red;
+}
